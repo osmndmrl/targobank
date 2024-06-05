@@ -1,0 +1,16 @@
+{
+  "name": "TargonPayment",
+  "version": "1.0.0",
+  "author": "Osman Demirel",
+  "description": "Targon Payment Integration",
+  "pluginClass": "PaymentMethod\\Providers\\PAYMENTServiceProvider",
+  "serviceProvider": "PaymentMethod\\Providers\\PAYMENTServiceProvider",
+  "routes": {
+    "web": {
+      "PaymentMethod\\Providers\\PAYMENTRouteServiceProvider": "map"
+    }
+  },
+  "runOnBuild": [
+    "PaymentMethod\\Migrations\\CreatePaymentMethod"
+  ]
+}

@@ -1,0 +1,30 @@
+<h1>Plugin: PAYMENT</h1><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Targon Payment Integration</title>
+</head>
+<body>
+    <h1>Welcome to Targon Payment Integration</h1>
+    <p>This is the main template for the Targon Payment integration plugin.</p>
+
+    <h2>Payment Status</h2>
+    {% if paymentStatus == 'success' %}
+        <p>Your payment was successful!</p>
+    {% elseif paymentStatus == 'failure' %}
+        <p>There was an issue with your payment. Please try again.</p>
+    {% else %}
+        <p>Processing your payment...</p>
+    {% endif %}
+
+    <h2>Order Details</h2>
+    <p>Order ID: {{ orderId }}</p>
+    <p>Amount: {{ amount }}</p>
+    <p>Currency: {{ currency }}</p>
+
+    <h2>Actions</h2>
+    <a href="/checkout/success">Continue to Success Page</a>
+    <br>
+    <a href="/checkout/error">Go to Error Page</a>
+</body>
+</html>

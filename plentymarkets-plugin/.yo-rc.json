@@ -1,0 +1,14 @@
+{
+  "@plentymarkets/generator-plugin": {
+    "promptValues": {
+      "type": "general"
+    },
+    "answers": {
+      "name": "PAYMENT",
+      "author": "TARGOBANKPAYMENT",
+      "type": "general",
+      "description": "payment",
+      "version": "0.0.1"
+    }
+  }
+}
