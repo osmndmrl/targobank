@@ -1,5 +1,5 @@
 {
-    "name": "PAYMENT",
+    "name": "Targobankpayment",
     "namespace": "PAYMENT",
     "type": "payment",
     "version": "0.0.1",
